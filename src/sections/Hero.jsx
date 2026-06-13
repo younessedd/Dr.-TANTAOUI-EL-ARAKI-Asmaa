@@ -87,16 +87,17 @@ export default function Hero() {
           transition={{ duration: 0.6 }}
           className="w-full h-full object-cover filter brightness-90"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent" />
+        <div className={`absolute inset-0 transition-all duration-700 ${index % 2 === 0 ? 'bg-gradient-to-r from-black/60 via-black/30 to-transparent' : 'bg-gradient-to-l from-black/60 via-black/30 to-transparent'}`} />
       </div>
 
       <motion.div
-        initial={{ opacity: 0, x: 16 }}
+        key={index}
+        initial={{ opacity: 0, x: index % 2 === 0 ? 32 : -32 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.7 }}
         className="relative z-10 w-full max-w-6xl mx-auto px-6"
       >
-        <div className="flex justify-start">
+        <div className={`flex ${index % 2 === 0 ? 'justify-start' : 'justify-end'}`}>
           <div className="w-full md:w-1/2 lg:w-5/12">
                 <div className="bg-black/30 backdrop-blur-md rounded-xl p-6 md:p-8 shadow-2xl border border-white/10">
               <div className="flex flex-col">
