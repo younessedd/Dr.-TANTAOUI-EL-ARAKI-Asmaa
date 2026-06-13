@@ -58,7 +58,7 @@ export default function FloatingMenu() {
   ]
 
   return (
-    <div className="fixed right-5 bottom-5 z-[9999]">
+    <div className="fixed right-4 bottom-4 md:right-6 md:bottom-6 z-[9999]">
       {/* Action Buttons */}
       <div className="flex flex-col-reverse gap-3 mb-3">
         {actions.map((action, index) => (
@@ -76,7 +76,7 @@ export default function FloatingMenu() {
               href={action.href}
               target={action.href.startsWith('http') ? '_blank' : '_self'}
               rel={action.href.startsWith('http') ? 'noreferrer' : ''}
-              className="w-12 h-12 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform"
+              className="w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform"
               style={{ backgroundColor: action.color }}
               aria-label={action.label}
             >
@@ -89,11 +89,11 @@ export default function FloatingMenu() {
       {/* Toggle Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-16 h-16 rounded-full bg-gray-900 dark:bg-white flex items-center justify-center shadow-2xl hover:scale-110 transition-all z-10"
+        className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-gray-900 dark:bg-white flex items-center justify-center shadow-2xl hover:scale-110 transition-all z-10"
         aria-label={isOpen ? 'Close menu' : 'Open menu'}
       >
         <div className={`transition-transform duration-300 ${isOpen ? 'rotate-45' : 'rotate-0'}`}>
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-white dark:text-gray-900">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-white dark:text-gray-900 md:w-8 md:h-8">
             <path d="M12 5v14M5 12h14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
           </svg>
         </div>
