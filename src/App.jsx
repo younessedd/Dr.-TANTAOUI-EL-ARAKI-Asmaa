@@ -9,6 +9,7 @@ import ProfileSection from './sections/ProfileSection'
 import FloatingWhatsApp from './components/FloatingWhatsApp'
 import ServicesSection from './sections/ServicesSection'
 import ContactLocation from './sections/ContactLocation'
+import ScrollToTop from './components/ScrollToTop'
 import { motion } from 'framer-motion'
 
 export default function App() {

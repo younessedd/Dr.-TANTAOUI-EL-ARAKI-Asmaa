@@ -5,6 +5,8 @@
 :root {
   --bg: #ffffff;
   --card: rgba(255,255,255,0.6);
+  --header-bg: #f1f5f9;
+  --footer-bg: #e2e8f0;
   --text: #0f172a;
   --muted: #6b7280;
   --accent-cyan: #00E5FF;
@@ -15,6 +17,8 @@
 [data-theme='dark'] {
   --bg: #0A0A0F;
   --card: rgba(10,10,15,0.45);
+  --header-bg: #1e293b;
+  --footer-bg: #0f172a;
   --text: #e6eef8;
   --muted: #9aa4b2;
   --accent-cyan: #00E5FF;

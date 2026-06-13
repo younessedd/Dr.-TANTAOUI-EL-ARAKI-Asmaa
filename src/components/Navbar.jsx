@@ -23,7 +23,7 @@ export default function Navbar({ onToggleTheme, theme }) {
 
   return (
     <header
-      className={`w-full z-40 transition-transform duration-300 bg-[var(--card)] border-b border-gray-200 dark:border-gray-800 ${isVisible ? 'translate-y-0' : '-translate-y-full'} fixed top-0 left-0`}
+      className={`w-full z-40 transition-transform duration-300 bg-[var(--header-bg)] border-b border-gray-300 dark:border-gray-700 ${isVisible ? 'translate-y-0' : '-translate-y-full'} fixed top-0 left-0`}
     >
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-3">

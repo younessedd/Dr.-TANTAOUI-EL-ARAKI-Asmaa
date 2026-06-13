@@ -4,7 +4,7 @@ import doctor from '../data/doctorData'
 
 export default function Footer() {
   return (
-    <footer className="w-full border-t border-gray-100 dark:border-gray-800 bg-[var(--card)]">
+    <footer className="w-full border-2 border-gray-300 dark:border-gray-700 bg-[var(--footer-bg)]">
       <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-6">
         <div>
           <div className="flex items-center gap-3 mb-3">
