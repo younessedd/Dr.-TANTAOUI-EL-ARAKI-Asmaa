@@ -6,7 +6,7 @@ import PortfolioSection from './sections/PortfolioSection'
 import ReviewsSection from './sections/ReviewsSection'
 import ContactSection from './sections/ContactSection'
 import ProfileSection from './sections/ProfileSection'
-import FloatingWhatsApp from './components/FloatingWhatsApp'
+import FloatingMenu from './components/FloatingMenu'
 import ServicesSection from './sections/ServicesSection'
 import ContactLocation from './sections/ContactLocation'
 import ScrollToTop from './components/ScrollToTop'
@@ -64,7 +64,8 @@ export default function App() {
           <ContactSection />
         </motion.div>
       </main>
-      <FloatingWhatsApp />
+      <FloatingMenu />
+      <ScrollToTop />
       <Footer />
     </div>
   )
