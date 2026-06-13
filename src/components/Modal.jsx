@@ -73,7 +73,6 @@ export default function Modal({ open, onClose, items = [], startIndex = 0 }) {
                 <div className="text-[var(--muted)] text-sm mb-2">{current.procedure}</div>
                 <div className="text-sm text-[var(--muted)]">{current.description}</div>
                 <div className="mt-4 flex gap-2">
-                  <button onClick={() => setLightbox(true)} className="px-3 py-1 border rounded">View Images</button>
                   <button onClick={onClose} className="px-4 py-2 bg-[var(--accent)] text-white rounded">Close</button>
                 </div>
               </div>
