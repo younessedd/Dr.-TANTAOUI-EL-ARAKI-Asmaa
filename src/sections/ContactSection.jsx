@@ -46,10 +46,11 @@ export default function ContactSection() {
           <div className="w-full h-64 md:h-full">
             <iframe
               title="clinic-map"
-              src={`https://www.google.com/maps?q=${encodeURIComponent(doctor.address)}&output=embed`}
+              src={`https://www.google.com/maps?q=${encodeURIComponent(doctor.address)},+Casablanca,+Morocco&output=embed&zoom=15`}
               className="w-full h-full border-0"
-              style={{ filter: 'grayscale(0.2) contrast(0.9) brightness(0.8)', minHeight: 260 }}
+              style={{ minHeight: 260 }}
               loading="lazy"
+              allowFullScreen
             />
           </div>
 
