@@ -1,14 +1,7 @@
-import React, { useRef, useState, useEffect } from 'react'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import React, { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
 
 export default function CaseCard({ item, onOpen }) {
-  const ref = useRef(null)
-  const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end start'] })
-
-  const y = useTransform(scrollYProgress, [0, 1], [30, 0])
-  const opacity = useTransform(scrollYProgress, [0, 0.3, 1], [0, 0.6, 1])
-  const rotate = useTransform(scrollYProgress, [0, 1], [3, 0])
-
   const [showBefore, setShowBefore] = useState(true)
 
   // Preload both images
@@ -21,12 +14,10 @@ export default function CaseCard({ item, onOpen }) {
 
   return (
     <motion.article
-      ref={ref}
-      style={{ y, opacity, rotate }}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.6, ease: 'easeOut' }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ duration: 0.5, ease: 'easeOut' }}
       className="glass rounded-lg shadow-lg overflow-hidden border border-[var(--border)] hover:scale-105 transform transition-transform duration-200 cursor-pointer"
       onClick={() => onOpen && onOpen(item)}
     >
