@@ -58,7 +58,7 @@ export default function FloatingMenu() {
   ]
 
   return (
-    <div className="fixed right-4 bottom-4 md:right-6 md:bottom-6 z-[9999]">
+    <div className="fixed right-4 bottom-[88px] md:right-6 md:bottom-[104px] z-[9999]">
       {/* Action Buttons */}
       <div className="flex flex-col-reverse gap-3 mb-3">
         {actions.map((action, index) => (
