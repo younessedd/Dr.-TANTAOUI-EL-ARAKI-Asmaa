@@ -65,7 +65,6 @@ export default function App() {
         </motion.div>
       </main>
       <FloatingMenu />
-      <ScrollToTop />
       <Footer />
     </div>
   )
