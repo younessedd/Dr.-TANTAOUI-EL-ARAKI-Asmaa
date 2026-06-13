@@ -8,9 +8,6 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-6">
         <div>
           <div className="flex items-center gap-3 mb-3">
-            <div className="w-10 h-10 bg-[var(--bg)] rounded-md flex items-center justify-center">
-              <img src="/src/assets/logo.svg" alt={`${doctor.name} logo`} className="w-6 h-6" />
-            </div>
             <div className="font-semibold">{doctor.name}</div>
           </div>
           <p className="text-sm text-[var(--muted)]">Clinical portfolio showcasing cases, research, and professional milestones.</p>

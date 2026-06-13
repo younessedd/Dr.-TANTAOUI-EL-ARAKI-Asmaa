@@ -27,9 +27,6 @@ export default function Navbar({ onToggleTheme, theme }) {
     >
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-[var(--bg)] rounded-md flex items-center justify-center">
-            <img src="/src/assets/logo.svg" alt={`${doctor.name} logo`} className="w-6 h-6" />
-          </div>
           <span className="font-semibold">{doctor.name}</span>
         </div>
 
